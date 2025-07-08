@@ -69,7 +69,7 @@ This template includes full internationalization support using [typesafe-i18n](h
 ### Supported Languages
 
 - **English (en)** - Base locale
-- **Chinese (zh)** - Traditional Chinese
+- **Chinese (zh)** - Simplified Chinese
 
 ### Project Structure
 
