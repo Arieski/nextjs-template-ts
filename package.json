@@ -5,9 +5,16 @@
   "scripts": {
     "dev": "next dev",
     "build": "next build",
+    "prod": "npm run build && npm run start",
     "start": "next start",
     "lint": "next lint",
+    "lint:fix": "next lint --fix",
+    "format": "prettier --write \"**/*.{ts,tsx,js,jsx,json,md}\"",
+    "format:check": "prettier --check \"**/*.{ts,tsx,js,jsx,json,md}\"",
     "i18n:types": "typesafe-i18n"
+  },
+  "engines": {
+    "node": "22.15.0"
   },
   "dependencies": {
     "@ant-design/icons": "^6.0.0",
