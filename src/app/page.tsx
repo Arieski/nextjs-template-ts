@@ -1,11 +1,11 @@
 "use client";
 import Image from "next/image";
 import styles from "./page.module.css";
-import { useLanguage } from "@/context/LanguageContext";
+import { useI18nContext } from "@/i18n/i18n-react";
 import LanguageSwitcher from "@/components/LanguageSwitcher";
 
 export default function Home() {
-  const { LL } = useLanguage();
+  const { LL } = useI18nContext();
   return (
     <main className={styles.main}>
       <div style={{ position: "absolute", top: 30, right: 50 }}>

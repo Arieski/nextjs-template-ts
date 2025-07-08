@@ -1,6 +1,6 @@
 import React from "react";
 import "./globals.css";
-import { LanguageProvider } from "@/context/LanguageContext";
+import I18nProvider from "@/i18n/I18nProvider";
 
 export const metadata = {
   title: "Nextjs Template TS",
@@ -16,7 +16,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body>
-        <LanguageProvider>{children}</LanguageProvider>
+        <I18nProvider>{children}</I18nProvider>
       </body>
     </html>
   );
