@@ -11,7 +11,10 @@
     "lint:fix": "next lint --fix",
     "format": "prettier --write \"**/*.{ts,tsx,js,jsx,json,md}\"",
     "format:check": "prettier --check \"**/*.{ts,tsx,js,jsx,json,md}\"",
-    "i18n:types": "typesafe-i18n"
+    "i18n:types": "typesafe-i18n --no-watch",
+    "i18n:watch": "typesafe-i18n",
+    "i18n:check": "tsc --noEmit",
+    "i18n:lint": "npm run i18n:types && npm run i18n:check"
   },
   "engines": {
     "node": "22.15.0"
