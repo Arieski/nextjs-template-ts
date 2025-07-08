@@ -24,7 +24,10 @@ const LanguageSwitcher: React.FC = () => {
         {SUPPORTED_LANGUAGES[lang] || lang}
       </span>
     ),
-    style: undefined,
+    style: {
+      padding: 0,
+      margin: 0,
+    },
   }));
 
   const handleMenuClick: MenuProps["onClick"] = async ({ key }) => {
@@ -38,7 +41,6 @@ const LanguageSwitcher: React.FC = () => {
       menu={{ items: items as any, onClick: handleMenuClick }}
       placement="bottomRight"
       trigger={["click"]}
-      arrow
     >
       <button className={styles.languageButton}>
         <GlobalOutlined style={{ fontSize: 18 }} />
